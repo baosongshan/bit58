@@ -77,10 +77,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="DataManager.h" />
+    <ClInclude Include="ScanManager.h" />
     <ClInclude Include="Sysutil.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DataManager.cpp" />
     <ClCompile Include="DocFastSearchTool.cpp" />
+    <ClCompile Include="ScanManager.cpp" />
     <ClCompile Include="Sysutil.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

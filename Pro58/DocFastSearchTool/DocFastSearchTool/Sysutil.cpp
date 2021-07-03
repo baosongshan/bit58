@@ -1,7 +1,7 @@
 #include"Sysutil.h"
 
 //É¨ÃèÄ¿Â¼
-void DirectionList(const string &path, vector<string> &filename, vector<string> &subdir)
+void DirectionList(const string &path, vector<string> &subfile, vector<string> &subdir)
 {
 	string _path = path;
 	_path += "\\*.*";
@@ -22,7 +22,7 @@ void DirectionList(const string &path, vector<string> &filename, vector<string> 
 		if(file.attrib &  _A_SUBDIR)
 			subdir.push_back(file.name);
 		else
-			filename.push_back(file.name);
+			subfile.push_back(file.name);
 		
 	}while(_findnext(handle, &file) == 0);
 
