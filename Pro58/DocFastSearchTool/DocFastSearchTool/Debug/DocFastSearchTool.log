@@ -1,15 +1,14 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : 文件“c:\bit\code\bit58\bit58\pro58\docfastsearchtool\docfastsearchtool\debug\vc120.idb”正由另一进程使用，因此该进程无法访问此文件。
-  Sysutil.cpp
-  ScanManager.cpp
-  DocFastSearchTool.cpp
-  DataManager.cpp
+﻿  DataManager.cpp
 c:\bit\code\bit58\bit58\pro58\docfastsearchtool\docfastsearchtool\datamanager.cpp(81): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
 c:\bit\code\bit58\bit58\pro58\docfastsearchtool\docfastsearchtool\datamanager.cpp(88): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
 c:\bit\code\bit58\bit58\pro58\docfastsearchtool\docfastsearchtool\datamanager.cpp(95): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
-c:\bit\code\bit58\bit58\pro58\docfastsearchtool\docfastsearchtool\datamanager.cpp(102): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\bit\code\bit58\bit58\pro58\docfastsearchtool\docfastsearchtool\datamanager.cpp(105): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
           c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
-  正在生成代码...
+c:\bit\code\bit58\bit58\pro58\docfastsearchtool\docfastsearchtool\datamanager.cpp(115): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
+c:\bit\code\bit58\bit58\pro58\docfastsearchtool\docfastsearchtool\datamanager.cpp(132): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
   DocFastSearchTool.vcxproj -> C:\Bit\Code\bit58\bit58\Pro58\DocFastSearchTool\Debug\DocFastSearchTool.exe

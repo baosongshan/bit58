@@ -25,11 +25,13 @@ void ScanManager::ScanDirection(const string &path)
 		{
 			//本地有文件，数据库没有，插入数据
 			m_dm.InsertDoc(path, *local_it);
+			++local_it;
 		}
 		else if(*local_it > *db_it)
 		{
 			//本地没有文件，数据库有，删除数据
 			m_dm.DeleteDoc(path, *db_it);
+			++db_it;
 		}
 		else
 		{
@@ -50,5 +52,11 @@ void ScanManager::ScanDirection(const string &path)
 	}
 
 	//扫描子目录
-	//.......
+	for(const auto &dir : local_dirs)
+	{
+		string dir_path = path;
+		dir_path += "\\";
+		dir_path += dir;
+		ScanDirection(dir_path);
+	}
 }

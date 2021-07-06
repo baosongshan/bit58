@@ -28,6 +28,8 @@ public:
 public:
 	void InitSqlite();
 public:
+	void Search(const string &key, vector<pair<string,string>> &doc_path);
+public:
 	void InsertDoc(const string &path, const string &doc);
 	void DeleteDoc(const string &path, const string &doc);
 	void GetDocs(const string &path, multiset<string> &docs);
