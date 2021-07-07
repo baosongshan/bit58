@@ -1,4 +1,5 @@
 #include"ScanManager.h"
+#include"Sysutil.h"
 
 
 int main(int argc, char *argv[])
@@ -6,10 +7,12 @@ int main(int argc, char *argv[])
 	//const string &path = "C:\\Bit\\Book\\比特科技\\阶段性考试试卷";
 	const string &path = "C:\\Bit\\Code\\bit58\\bit58\\Pro58\\Test_Doc";
 	
-	ScanManager sm;
-	sm.ScanDirection(path);
+	//创建扫描对象
+	ScanManager &sm = ScanManager::CreateScanManagerObj(path);
+	//sm.ScanDirection(path);
 
-	DataManager dm;
+	//创建搜索对象
+	DataManager &dm = DataManager::GetDataManagerObj();
 	string key;
 	vector<pair<string,string>> doc_path;
 	while(1)

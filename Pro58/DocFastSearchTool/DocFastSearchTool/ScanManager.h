@@ -5,7 +5,14 @@
 class ScanManager
 {
 public:
+	static ScanManager& CreateScanManagerObj(const string &path);
+public:
+	void StartScan(const string &path);
 	void ScanDirection(const string &path);
 private:
-	DataManager m_dm;
+	ScanManager();
+private:
+	//DataManager m_dm;
+	static ScanManager _sm_inst;
 };
+

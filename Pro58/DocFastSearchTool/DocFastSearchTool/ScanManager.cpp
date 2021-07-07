@@ -1,6 +1,27 @@
 #include"ScanManager.h"
 #include"Sysutil.h"
 
+ScanManager ScanManager::_sm_inst;
+
+ScanManager::ScanManager()
+{}
+
+void ScanManager::StartScan(const string &path)
+{
+	while(1)
+	{
+		ScanDirection(path);
+	}
+}
+
+ScanManager& ScanManager::CreateScanManagerObj(const string &path)
+{
+	thread scan_th(&StartScan, &_sm_inst, path);
+	scan_th.detach();
+	return _sm_inst;
+}
+
+
 void ScanManager::ScanDirection(const string &path)
 {
 	//扫描本地文件
@@ -13,7 +34,9 @@ void ScanManager::ScanDirection(const string &path)
 
 	//扫描数据库文件
 	multiset<string> db_set;
+	DataManager &m_dm = DataManager::GetDataManagerObj();
 	m_dm.GetDocs(path, db_set);
+
 
 	//同步数据库
 	auto local_it = local_set.begin();

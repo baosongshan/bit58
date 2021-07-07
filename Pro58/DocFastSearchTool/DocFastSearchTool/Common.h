@@ -8,6 +8,10 @@
 
 #include<set>
 
+#include<thread>
+
+//#include<vld.h>
+
 #include"./sqlite/sqlite3.h"
 
 using namespace std;
